@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="446999340" file="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool.prj" location="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app" name="BackscatterLinkBudgetTool" preferred-package-location="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="4048178479" file="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool.prj" location="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app" name="BackscatterLinkBudgetTool" preferred-package-location="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>UnderwaterBackscatterLinkBudget</param.appname>
     <param.icon>${PROJECT_ROOT}\BackscatterLinkBudgetTool_resources\icon.ico</param.icon>
     <param.icons>
@@ -11,12 +11,12 @@
     <param.version>1.0</param.version>
     <param.authnamewatermark>Ahmed Allam</param.authnamewatermark>
     <param.email>allam@mit.edu; wakbar@mit.edu; fadel@mit.edu</param.email>
-    <param.company>Signal Kinetics @ MIT</param.company>
+    <param.company>MIT</param.company>
     <param.summary>A graphical tool for calculating the link budget for underwater acoustic backscatter communications.</param.summary>
-    <param.description>Backscatter Link Budget Calculator is a tool for quickly evaluating the performance of acoustic backscatter in real-world scenarios. Our tool enables users to customize a backscatter system with practical underwater transducers and channel properties, then uses an analytical framework to predict the system's  power-up and communication range.</param.description>
+    <param.description>Underwater Backscatter Link Budget is a tool for quickly evaluating the performance of acoustic backscatter in real-world scenarios. Our tool enables users to customize a backscatter system with practical underwater transducers and channel properties, then uses an analytical framework to predict the system's  power-up and communication range.</param.description>
     <param.screenshot>${PROJECT_ROOT}\resources\SK_Logo.jpg</param.screenshot>
     <param.guid />
-    <param.installpath.string>\Signal Kinetics @ MIT\UnderwaterBackscatterLinkBudget\</param.installpath.string>
+    <param.installpath.string>\MIT\UnderwaterBackscatterLinkBudget\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
@@ -78,13 +78,13 @@
     <fileset.main>
       <file>${PROJECT_ROOT}\Backscatter.mlapp</file>
     </fileset.main>
-    <fileset.resources>
-      <file>${PROJECT_ROOT}\Resources</file>
-      <file>${PROJECT_ROOT}\Transducers</file>
-    </fileset.resources>
+    <fileset.resources />
     <fileset.package>
-      <file>${PROJECT_ROOT}\Resources</file>
+      <file>${PROJECT_ROOT}\AcousticBackscatterModel.m</file>
+      <file>${PROJECT_ROOT}\noiseDensity.m</file>
+      <file>${PROJECT_ROOT}\Transducer.m</file>
       <file>${PROJECT_ROOT}\Transducers</file>
+      <file>${PROJECT_ROOT}\waterAtten.m</file>
     </fileset.package>
     <fileset.depfun>
       <file>${PROJECT_ROOT}\AboutDialog.mlapp</file>
@@ -93,6 +93,10 @@
       <file>${PROJECT_ROOT}\GenericTransducerDialog.mlapp</file>
       <file>${PROJECT_ROOT}\Lambert_W.m</file>
       <file>${PROJECT_ROOT}\noiseDensity.m</file>
+      <file>${PROJECT_ROOT}\resources\backscatter.png</file>
+      <file>${PROJECT_ROOT}\resources\MIT_logo.png</file>
+      <file>${PROJECT_ROOT}\resources\MIT_logo2.png</file>
+      <file>${PROJECT_ROOT}\resources\SK_Logo.jpg</file>
       <file>${PROJECT_ROOT}\Transducer.m</file>
       <file>${PROJECT_ROOT}\TransducerDialog.mlapp</file>
       <file>${PROJECT_ROOT}\waterAtten.m</file>
