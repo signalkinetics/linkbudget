@@ -148,7 +148,7 @@ classdef AcousticBackscatterModel < handle
                     + 20*log10(model.P_ref) - 20*log10(freq) + IML_D))/10);                   
         end
 
-        function Pin_u=calculateMinPowerInUplink(model,freq,range,BW,SNR_th,Ze)
+        function Pin_u=calculateMinPowerInUplink(model,freq,range,BW,SNR_th,Ze1,Ze2s)
             [G_tx,G_rx,G_node,lambda,alpha]=model.getDerivedParameters(freq);
             PL=10*model.channel.k_s*log10(range)+alpha*range;
 
