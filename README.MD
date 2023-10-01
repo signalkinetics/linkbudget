@@ -35,8 +35,8 @@ The data in the CSV file should be formated as columns with following format:
 
 The first row is reserved for headers.
 
-After selecting the desired transducer for Tx, Rx, and the backscatter node. You can configure the parameter of the underwater channel (acoustic propagation medium) using the "Config. Channel" button.
-You can enter a numerical value for the following parameters for the medium properties:
+After selecting the desired transducer for Tx, Rx, and the backscatter node. You can configure the parameters of the underwater channel (acoustic propagation medium) using the "Config. Channel" button.
+You can enter a numerical value for the following parameters:
 1. The **spreading factor** *k* which defines how the acoustic waves spread in the channel. Use k=2 for spherical spreading (ex. a vertical channel in the ocean (i.e. surface to ocean floor)), k=1 for cylindrical spreading (ex. a shallow river with hard bottom), and k=1.5 for practical spreading (ex. shallow water, underwater channels, etc.).
 1. Water **density** in kg/m^3 (assumed uniform throughout the channel).
 1. **Speed of sound** in m/s (assumed uniform throughout the channel).
@@ -68,7 +68,7 @@ This panel defines the secondary operation parameters used for the analysis. The
 ### Data & Power Settings Panel
 Use this panel to define:
 1. The **data bandwidth** (communication rate) in (Hz/kHz/MHz). The bandwidth is the rate (frequency) of switching the backscatter node between the reflection and absorption state to transmit uplink data. This parameter only affects the (communication range/uplink) plot.
-1. The **power threshold** in (W,dBW,dBm). The power threshold defines the minimum required power for operating the backscatter node electronics (microcontroller, FPGA, sensors, etc). The threshold is shown as a dashed red line in the downlink plot when Harv power/SNR are plotted. The power threshold also determines the maximum power-up range and the minimum input power for powering up the backscatter electronics at a given range.
+1. The **power threshold** in (W/mW/uW/dBW/dBm). The power threshold defines the minimum required power for operating the backscatter node electronics (microcontroller, FPGA, sensors, etc). The threshold is shown as a dashed red line in the downlink plot when Harv power/SNR are plotted. The power threshold also determines the maximum power-up range and the minimum input power for powering up the backscatter electronics at a given range.
 1. The **SNR threshold** for successful communication in dB. The SNR threshold is shown as a dashed red line in the uplink plot when Harv power/SNR are plotted. The SNR threshold also determines the maximum communication range and the minimum input power for successful backscatter communication at a given range.
 
 ## Known Limitations
