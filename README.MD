@@ -4,8 +4,6 @@ Acoustic backscatter is a recent communication technology that enables ultra-low
 
 A demo video showing how to use an early version of the tool can be found here: https://youtu.be/CJBYtOHUjC8
 
-## Getting Started
-
 ## Installing the Tool
 
 ### Installer for Windows
