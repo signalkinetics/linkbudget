@@ -32,11 +32,12 @@ The data in the CSV file should be formated as columns with following format:
 | 1000 | 150 | 0.1 | 50 |
 | 1100 | 152 | 0.5 | 53 | 
 | ... | ... | ... | ... |
-The first row reserved for headers.
+
+The first row is reserved for headers.
 
 After selecting the desired transducer for Tx, Rx, and the backscatter node. You can configure the parameter of the underwater channel (acoustic propagation medium) using the "Config. Channel" button.
 You can enter a numerical value for the following parameters for the medium properties:
-1. The **spreading factor** k which defines how the acoustic waves spread in the channel. Use k=2 for spherical spreading (ex. a vertical channel in the ocean (i.e. surface to ocean floor)), k=1 for cylindrical spreading (ex. a shallow river with hard bottom), and k=1.5 for practical spreading (ex. shallow water, underwater channels, etc.).
+1. The **spreading factor** *k* which defines how the acoustic waves spread in the channel. Use k=2 for spherical spreading (ex. a vertical channel in the ocean (i.e. surface to ocean floor)), k=1 for cylindrical spreading (ex. a shallow river with hard bottom), and k=1.5 for practical spreading (ex. shallow water, underwater channels, etc.).
 1. Water **density** in kg/m^3 (assumed uniform throughout the channel).
 1. **Speed of sound** in m/s (assumed uniform throughout the channel).
 1. Average **depth** of the channel in meters. Used in calculating the attenuation (absorption) coefficient of acoustic waves underwater.
@@ -45,7 +46,7 @@ You can enter a numerical value for the following parameters for the medium prop
 1. The **pH** value of the water indicating its acidity which is used in calculating attenuation. A default pH of 8 is used for average ocean acidity (alkaline).  
 
 The underwater ambient noise strongly influences the acheivable SNR in the underwater channel. You can define the following parameters for approximating the noise at Rx:
-1. **Wind speed** at the sea surface in [m/s].
+1. **Wind speed** at the sea surface in m/s.
 1. **Shipping** activity factor that approximates the shipping noise.
 
 ### Analysis Panel
@@ -63,7 +64,6 @@ Note that the units of the dependent parameter is determined from the "Analysis 
 
 ### Analysis Settings Panel
 This panel defines the secondary operation parameters used for the analysis. The analyzed (primary) operation parameters are selected in the "Analysis Panel" and are plotted on the x-axis of the downlink/uplink plots. The secondary parameters are used to evaluate the plots.
-
 
 ### Data & Power Settings Panel
 Use this panel to define:
