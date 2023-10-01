@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="4048178479" file="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool.prj" location="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app" name="BackscatterLinkBudgetTool" preferred-package-location="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="4048178479" file="C:\Users\Ahmed\Documents\GitHub\linkbudget\BackscatterLinkBudgetTool.prj" location="C:\Users\Ahmed\Documents\GitHub\linkbudget" name="BackscatterLinkBudgetTool" preferred-package-location="C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>UnderwaterBackscatterLinkBudget</param.appname>
     <param.icon>${PROJECT_ROOT}\BackscatterLinkBudgetTool_resources\icon.ico</param.icon>
     <param.icons>
@@ -9,7 +9,7 @@
       <file>${PROJECT_ROOT}\BackscatterLinkBudgetTool_resources\icon_16.png</file>
     </param.icons>
     <param.version>1.0</param.version>
-    <param.authnamewatermark>Ahmed Allam</param.authnamewatermark>
+    <param.authnamewatermark>Ahmed Allam; Waleed Akbar; Fadel Adib</param.authnamewatermark>
     <param.email>allam@mit.edu; wakbar@mit.edu; fadel@mit.edu</param.email>
     <param.company>MIT</param.company>
     <param.summary>A graphical tool for calculating the link budget for underwater acoustic backscatter communications.</param.summary>
@@ -32,7 +32,7 @@
     <param.web.mcr>true</param.web.mcr>
     <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>Underwater Backscatter Link Budget</param.web.mcr.name>
+    <param.web.mcr.name>Underwate_Backscatter_Link_Budget</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>true</param.windows.command.prompt>
@@ -102,9 +102,9 @@
       <file>${PROJECT_ROOT}\waterAtten.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\BackscatterLinkBudgetTool\for_testing" name="splash.png" optional="false">C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\BackscatterLinkBudgetTool\for_testing" name="UnderwaterBackscatterLinkBudget.exe" optional="false">C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool\for_testing\UnderwaterBackscatterLinkBudget.exe</file>
-      <file location="${PROJECT_ROOT}\BackscatterLinkBudgetTool\for_testing" name="readme.txt" optional="true">C:\Users\Ahmed\Documents\GitHub\Underwater-Backscatter-Link-Budget-Analysis\matlab_app\BackscatterLinkBudgetTool\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\BackscatterLinkBudgetTool\for_testing" name="splash.png" optional="false">C:\Users\Ahmed\Documents\GitHub\linkbudget\BackscatterLinkBudgetTool\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\BackscatterLinkBudgetTool\for_testing" name="readme.txt" optional="true">C:\Users\Ahmed\Documents\GitHub\linkbudget\BackscatterLinkBudgetTool\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\BackscatterLinkBudgetTool\for_testing" name="UnderwaterBackscatterLinkBudget.exe" optional="false">C:\Users\Ahmed\Documents\GitHub\linkbudget\BackscatterLinkBudgetTool\for_testing\UnderwaterBackscatterLinkBudget.exe</file>
     </build-deliverables>
     <workflow />
     <matlab>
