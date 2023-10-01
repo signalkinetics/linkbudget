@@ -19,9 +19,9 @@ You start by selecting and configuring the underwater transducers to be used in 
 For each component, you can click the dropdown menu to select a transducer of your choice:
 1. **Spherical**: Assumes an omnidirectional transducer with a uniform gain (G=0) across all frequencies. Select this option if you want to model an ideal hydrophone or thin-shell transducer.
 1. **Custom**: Select this option to define uniform properties for your transducer across frequencies. Upon selecting custom, you can click on the "Config." button that appears next to the dropdown menu to input parameters of your transducer.
-	You can either specify the 
-	1. Transducer's **gain** (G) in dB
-	1. Transducer's **directivity index** (DI) in dB and **efficiency** in %
+	You can either specify the:
+	1. Transducer's **gain** (G) in dB.
+	1. Transducer's **directivity index** (DI) in dB and **efficiency** in %.
 	1. Transducer's **transmit voltage response** (TVR) in dB. Note that you have to specify the transducers complex electrical impedance (Z=R+jX) to use TVR in the tool.
 1. A commercial transducer: The tool includes the frequency dependent paramters of three popular underwater communication transducers (B-Tech BT-2RCL, Benthowave BII-7511, and Geospectrum M27-931) from their datasheets. Select any of these transducers and click on "View" to see its gain, TVR and impedance versus frequency.
 
@@ -37,8 +37,8 @@ The first row reserved for headers.
 After selecting the desired transducer for Tx, Rx, and the backscatter node. You can configure the parameter of the underwater channel (acoustic propagation medium) using the "Config. Channel" button.
 You can enter a numerical value for the following parameters for the medium properties:
 1. The **spreading factor** k which defines how the acoustic waves spread in the channel. Use k=2 for spherical spreading (ex. a vertical channel in the ocean (i.e. surface to ocean floor)), k=1 for cylindrical spreading (ex. a shallow river with hard bottom), and k=1.5 for practical spreading (ex. shallow water, underwater channels, etc.).
-1. Water **density** in kg/m^3 (assumed uniform throughout the channel)
-1. **Speed of sound** in m/s (assumed uniform throughout the channel)
+1. Water **density** in kg/m^3 (assumed uniform throughout the channel).
+1. **Speed of sound** in m/s (assumed uniform throughout the channel).
 1. Average **depth** of the channel in meters. Used in calculating the attenuation (absorption) coefficient of acoustic waves underwater.
 1. Water **temperature** in degrees Celsius. The temperature is assumed uniform throughout the channel and used to calculte acoustic attenuation.
 1. Water **salinity** in parts per thousand (ppt). A default value of 35 is used for the average salinity of the ocean. Use a value lower than 0.5 for freshwaters in rivers. The water salinity has a strong effect on its acoustic attenuation especially at low frequencies (below 200 kHz).
