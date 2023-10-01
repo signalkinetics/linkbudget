@@ -2,18 +2,14 @@
 
 Acoustic backscatter is a recent communication technology that enables ultra-low power sensing and connectivity in underwater environments. This repository includes an interactive graphical tool (Matlab App) for quickly evaluating the performance of acoustic backscatter in real-world scenarios. The tool enables users to customize a backscatter system with practical underwater transducers and channel properties, then uses an analytical framework to predict the system's power-up and communication range. Researchers and IoT designers with no acoustics background can leverage our tool to make informed design choices and optimize their system's performance. 
 
-A demo video of an early version of the tool can be found here: https://youtu.be/CJBYtOHUjC8
-
-[![Watch the video](images/video_demo.jpg)](https://youtu.be/CJBYtOHUjC8)
+A demo video showing how to use an early version of the tool can be found here: https://youtu.be/CJBYtOHUjC8
 
 ## Getting Started
 
 ## Installing the Tool
 
 ### Installer for Windows
-You can download and install a standalone executable of the tool as desktop app. The latest version of the installer can be found in the [latest release] (https://github.com/signalkinetics/linkbudget/releases).
-
-%%TODO add link to uploaded exectuables
+You can download and install a standalone executable of the tool as desktop app. The latest version of the installer can be found in the [latest release](https://github.com/signalkinetics/linkbudget/releases).
 ### Other
 If you have MATLAB 2023a or newer you can clone this repository and run the tool by opening Backscatter.mlapp from MATLAB.
 
