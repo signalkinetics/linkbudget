@@ -87,6 +87,7 @@ Use the green calculate button to update the plots in the Results panel. The pan
 For more information about the theory and validation of the backscatter analytical model used in this tool please refer to our MobiCom 2023 paper:
 
 [The Underwater Backscatter Channel: Theory, Link Budget, and Experimental Validation](https://dl.acm.org/doi/10.1145/3570361.3613265)
+
 **Authors**:  [Waleed Akbar](https://signal-kinetics.media.mit.edu/people/waleed-akbar/), [Ahmed Allam](https://ahmed-allam.com/), [Fadel Adib](http://www.mit.edu/~fadel/)
 
 You can cite the backscatter link budget analytical model using Bibtex:
@@ -114,6 +115,7 @@ series = {ACM MobiCom '23}
 
 To cite the graphical tool please refer to our SIGCOMM 2023 demo:
 [Demo: Underwater Backscatter Link Budget Tool](https://dl.acm.org/doi/10.1145/3603269.3610836)
+
 **Authors**:  [Ahmed Allam](https://ahmed-allam.com/), [Waleed Akbar](https://signal-kinetics.media.mit.edu/people/waleed-akbar/), [Fadel Adib](http://www.mit.edu/~fadel/)
 
 Cite the demo using BibTex as follows:
