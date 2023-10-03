@@ -1,6 +1,6 @@
 # Underwater Backscatter Link Budget Tool
 
-Acoustic backscatter is a recent communication technology that enables ultra-low power sensing and connectivity in underwater environments. This repository includes an interactive graphical tool (Matlab App) for quickly evaluating the performance of acoustic backscatter in real-world scenarios. The tool enables users to customize a backscatter system with practical underwater transducers and channel properties, then uses an analytical framework to predict the system's power-up and communication range. Researchers and IoT designers with no acoustics background can leverage our tool to make informed design choices and optimize their system's performance. 
+Acoustic backscatter is a recent communication technology that enables ultra-low power sensing and connectivity in underwater environments. This repository includes an interactive graphical tool (Matlab App) for quickly evaluating the performance of acoustic backscatter in real-world scenarios. The tool enables users to customize a backscatter system with practical underwater transducers and channel properties. It uses an [analytical framework](https://dl.acm.org/doi/10.1145/3570361.3613265) developed by the [MIT Signal Kinetics](https://signal-kinetics.media.mit.edu/) to predict the system's power-up and communication range. The tool is built so that researchers, engineers, and IoT designers with little/no acoustics background can leverage it to make informed design choices and optimize their system's performance. 
 
 A demo video showing how to use an early version of the tool can be found here: https://youtu.be/CJBYtOHUjC8
 
@@ -71,19 +71,52 @@ Use this panel to define:
 1. The **power threshold** in (W/mW/uW/dBW/dBm). The power threshold defines the minimum required power for operating the backscatter node electronics (microcontroller, FPGA, sensors, etc). The threshold is shown as a dashed red line in the downlink plot when Harv power/SNR are plotted. The power threshold also determines the maximum power-up range and the minimum input power for powering up the backscatter electronics at a given range.
 1. The **SNR threshold** for successful communication in dB. The SNR threshold is shown as a dashed red line in the uplink plot when Harv power/SNR are plotted. The SNR threshold also determines the maximum communication range and the minimum input power for successful backscatter communication at a given range.
 
+### Results Panel
+Use the green calculate button to update the plots in the Results panel. The panel contains two-plots: 
+1. The downlink plot (left) captures the power harvesting performance of the backscatter node.
+1. The uplink plot (right) captures the backscatter communication performance of the backscatter node as observed at Rx.
+
 ## Known Limitations
 1. The theoeretical model assumes a uniform underwater acoustic channel between Tx/Rx and the backscatter node. Other channel effects such as thermoclines and multipath are not currently supported.
 1. The theoretical model assumes the far-field approximation for acoustic propagation. Non-physical results might be generated for ranges smaller than the sum of the Rayleigh distance of Tx/Rx and the backscatter node. 
 1. Perfect electrical impedance matching is assumed between the backscatter node and the connected electronics. The effect of electrical impedance mismatch might be included in future versions.
 
 
-## Cite This Work
+## About This Work
 
+For more information about the theory and validation of the backscatter analytical model used in this tool please refer to our MobiCom 2023 paper:
+
+[The Underwater Backscatter Channel: Theory, Link Budget, and Experimental Validation](https://dl.acm.org/doi/10.1145/3570361.3613265)
 **Authors**:  [Waleed Akbar](https://signal-kinetics.media.mit.edu/people/waleed-akbar/), [Ahmed Allam](https://ahmed-allam.com/), [Fadel Adib](http://www.mit.edu/~fadel/)
 
-**Paper**: https://dl.acm.org/doi/10.1145/3603269.3610836
+You can cite the backscatter link budget analytical model using Bibtex:
 
-Cite the paper using BibTex as follows:
+```
+@inproceedings{10.1145/3570361.3613265,
+author = {Akbar, Waleed and Allam, Ahmed and Adib, Fadel},
+title = {The Underwater Backscatter Channel: Theory, Link Budget, and Experimental Validation},
+year = {2023},
+isbn = {9781450399906},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3570361.3613265},
+doi = {10.1145/3570361.3613265},
+abstract = {Underwater backscatter is a recent networking technology that enables net-zero-power communication and sensing in underwater environments. Existing research on underwater backscatter has focused on designing and demonstrating early systems with impressive capabilities; however, what remains critically missing is an end-to-end analysis of the underwater backscatter communication channel, which is necessary to understand the potential of this technology to scale to real-world applications and practical deployments.This paper presents the first comprehensive theoretical and empirical analysis of the underwater backscatter channel, including the downlink and uplink of end-to-end backscatter. We introduce a closed-form analytical model that encompasses the physical properties of piezoelectric materials, electromechanical coupling, electrical impedance, and the underwater acoustic channel. We verify the correctness of this theoretical analysis through both finite-element-model physical simulations and real-world experimental validation in a river, demonstrating that the analytical model matches our real-world experiments with a median deviation of only 0.76 dB. Using this model, we then simulate the theoretical limits of underwater backscatter as a function of different design parameters and identify pathways for pushing underwater backscatter toward its theoretical limits.},
+booktitle = {Proceedings of the 29th Annual International Conference on Mobile Computing and Networking},
+articleno = {51},
+numpages = {15},
+keywords = {subsea IoT, backscatter, link budget, underwater networks},
+location = {Madrid, Spain},
+series = {ACM MobiCom '23}
+}
+```
+  
+
+To cite the graphical tool please refer to our SIGCOMM 2023 demo:
+[Demo: Underwater Backscatter Link Budget Tool](https://dl.acm.org/doi/10.1145/3603269.3610836)
+**Authors**:  [Ahmed Allam](https://ahmed-allam.com/), [Waleed Akbar](https://signal-kinetics.media.mit.edu/people/waleed-akbar/), [Fadel Adib](http://www.mit.edu/~fadel/)
+
+Cite the demo using BibTex as follows:
 
 ```
 @inproceedings{10.1145/3603269.3610836,
@@ -103,6 +136,4 @@ keywords = {underwater backscatter networking, link budget analysis, subsea IoT}
 location = {New York, NY, USA},
 series = {ACM SIGCOMM '23}
 }
-
-  
 ```
