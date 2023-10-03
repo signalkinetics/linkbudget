@@ -113,7 +113,7 @@ series = {ACM MobiCom '23}
 ```
   
 
-To cite the graphical tool please refer to our SIGCOMM 2023 demo:
+To reference the graphical tool please refer to our SIGCOMM 2023 demo:
 [Demo: Underwater Backscatter Link Budget Tool](https://dl.acm.org/doi/10.1145/3603269.3610836)
 
 **Authors**:  [Ahmed Allam](https://ahmed-allam.com/), [Waleed Akbar](https://signal-kinetics.media.mit.edu/people/waleed-akbar/), [Fadel Adib](http://www.mit.edu/~fadel/)
