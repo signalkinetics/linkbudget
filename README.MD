@@ -7,7 +7,7 @@ A demo video showing how to use an early version of the tool can be found here: 
 ## Installing the Tool
 
 ### Installer for Windows
-You can download and install a standalone executable of the tool as desktop app. The latest version of the installer can be found in the [latest release](https://github.com/signalkinetics/linkbudget/releases).
+You can download and install a standalone executable of the tool as a desktop app. The latest version of the installer can be found in the [latest release](https://github.com/signalkinetics/linkbudget/releases).
 ### Other
 If you have MATLAB 2023a or newer you can clone this repository and run the tool by opening Backscatter.mlapp from MATLAB.
 
@@ -35,7 +35,7 @@ The data in the CSV file should be formated as columns with following format:
 
 The first row is reserved for headers.
 
-After selecting the desired transducer for Tx, Rx, and the backscatter node. You can configure the parameters of the underwater channel (acoustic propagation medium) using the "Config. Channel" button.
+After selecting the desired transducers for Tx, Rx, and the backscatter node. You can configure the parameters of the underwater channel (acoustic propagation medium) using the "Config. Channel" button.
 You can enter a numerical value for the following parameters:
 1. The **spreading factor** *k* which defines how the acoustic waves spread in the channel. Use k=2 for spherical spreading (ex. a vertical channel in the ocean (i.e. surface to ocean floor)), k=1 for cylindrical spreading (ex. a shallow river with hard bottom), and k=1.5 for practical spreading (ex. shallow water, underwater channels, etc.).
 1. Water **density** in kg/m^3 (assumed uniform throughout the channel).
