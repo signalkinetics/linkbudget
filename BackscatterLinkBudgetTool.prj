@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\BackscatterLinkBudgetTool_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\BackscatterLinkBudgetTool_resources\icon_16.png</file>
     </param.icons>
-    <param.version>1.0.2</param.version>
+    <param.version>1.0.3</param.version>
     <param.authnamewatermark>Ahmed Allam; Waleed Akbar; Fadel Adib</param.authnamewatermark>
     <param.email>allam@mit.edu; wakbar@mit.edu; fadel@mit.edu</param.email>
     <param.company>MIT</param.company>
@@ -108,44 +108,7 @@
     <workflow />
     <matlab>
       <root>C:\Program Files\MATLAB\R2023a</root>
-      <toolboxes>
-        <toolbox name="matlabcoder" />
-        <toolbox name="embeddedcoder" />
-        <toolbox name="gpucoder" />
-        <toolbox name="fixedpoint" />
-        <toolbox name="matlabhdlcoder" />
-        <toolbox name="neuralnetwork" />
-      </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <embeddedcoder>
-          <enabled>true</enabled>
-        </embeddedcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
-      </toolbox>
-      <toolbox>
-        <fixedpoint>
-          <enabled>true</enabled>
-        </fixedpoint>
-      </toolbox>
-      <toolbox>
-        <matlabhdlcoder>
-          <enabled>true</enabled>
-        </matlabhdlcoder>
-      </toolbox>
-      <toolbox>
-        <neuralnetwork>
-          <enabled>true</enabled>
-        </neuralnetwork>
-      </toolbox>
+      <toolboxes />
     </matlab>
     <platform>
       <unix>false</unix>
